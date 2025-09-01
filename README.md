@@ -88,3 +88,17 @@ Cobertura solo indica que el código fue ejecutado, no que fue probado con casos
 Ejemplo: un test puede ejecutar una función sin validar correctamente el resultado.
 
 Puede faltar probar casos límite, errores de concurrencia, problemas de integración, etc.
+
+### Describa que es un Diagrama de Casos de Uso y que elementos lo componen. ¿Para qué sirve en la fase de análisis de requerimientos? 
+
+### ¿Cuál es la diferencia entre el uso de Junit y Jacoco en un proyecto, y como complementa SonarQube este proceso en términos de calidad de software?
+### ¿Qué ventajas tiene el uso de Planning Poker frente a otros métodos de estimación tradicional y como ayuda a mejorar la transparencia y compromiso del equipo?
+### Menciona los valores de Scrum y explica cual consideras más difícil de aplicar en un equipo. 
+
+
+
+# reto 1
+## Identifiquen reglas de negocio.
+## Definan las funcionalidades principales.
+## Escriban los actores principales
+## Documenten las precondiciones necesarias para el sistema. 
