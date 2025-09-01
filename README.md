@@ -107,4 +107,36 @@ Puede faltar probar casos límite, errores de concurrencia, problemas de integra
 - Permitir consultas del saldo de una cuenta.
 - Hacer un depósito.
 ## Escriban los actores principales
+
+- Cliente : titular de la cuenta que crea su cuenta, consulta saldo y realiza depósitos.
+
+- Catálogo de Bancos: fuente de los códigos de banco válidos (dos primeros dígitos del número de cuenta).
+
+- Operador de Soporte: administra datos maestros (p. ej., mantenimiento del catálogo de bancos si se gestiona internamente) y atiende casos excepcionales.
 ## Documenten las precondiciones necesarias para el sistema. 
+
+### Generales (de negocio)
+
+- Formato de número de cuenta válido: exactamente 10 dígitos numéricos, sin letras ni caracteres especiales.
+
+- Banco registrado: los dos primeros dígitos del número de cuenta corresponden a un banco válido en el catálogo.
+
+- Cuenta existente y activa: para consultar saldo o realizar depósitos, la cuenta debe existir en el sistema y estar activa.
+
+- Montos válidos en depósitos: el importe a depositar debe ser numérico y mayor que cero.
+
+- Integridad de datos del cliente: la información mínima del cliente (p. ej., identificación) está registrada y validada antes de crear la cuenta.
+
+### Específicas por funcionalidad
+
+## Crear cuenta:
+
+- Se verificó el formato del número (10 dígitos) y el código de banco en el catálogo.
+
+## Consultar saldo:
+
+- La cuenta existe y pasó las validaciones de formato.
+
+## Realizar depósito:
+
+- La cuenta existe; el monto es positivo y procesable.
