@@ -110,8 +110,6 @@ Puede faltar probar casos límite, errores de concurrencia, problemas de integra
 
 - Cliente : titular de la cuenta que crea su cuenta, consulta saldo y realiza depósitos.
 
-- Catálogo de Bancos: fuente de los códigos de banco válidos (dos primeros dígitos del número de cuenta).
-
 - Operador de Soporte: administra datos maestros (p. ej., mantenimiento del catálogo de bancos si se gestiona internamente) y atiende casos excepcionales.
 ## Documenten las precondiciones necesarias para el sistema. 
 
@@ -129,14 +127,14 @@ Puede faltar probar casos límite, errores de concurrencia, problemas de integra
 
 ### Específicas por funcionalidad
 
-## Crear cuenta:
+#### Crear cuenta:
 
 - Se verificó el formato del número (10 dígitos) y el código de banco en el catálogo.
 
-## Consultar saldo:
+#### Consultar saldo:
 
 - La cuenta existe y pasó las validaciones de formato.
 
-## Realizar depósito:
+#### Realizar depósito:
 
 - La cuenta existe; el monto es positivo y procesable.
