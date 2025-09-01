@@ -37,7 +37,7 @@ public class Pruebas {
     @Test
     void testCrearCuentaYDepositar() {
         Banco banco = new Banco("02", "DAVIVIENDA");
-        Cliente cliente = new Cliente("011", "Pedro Sanchez", "1122334455");
+        Cliente cliente = new Cliente("010", "Pedro Sanchez", "1122334455");
         GestorCuenta gestor = new GestorCuenta();
 
         CuentaBancaria cuenta = gestor.crearCuenta(cliente, banco, "0200001234");
