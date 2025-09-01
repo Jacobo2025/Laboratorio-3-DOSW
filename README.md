@@ -100,6 +100,7 @@ Puede faltar probar casos límite, errores de concurrencia, problemas de integra
 # Reto 1
 ## Identifiquen reglas de negocio.
 - Los números de cuenta deben tener exactamente 10 dígitos.
+- Solo es válido si los dos primeros dígitos corresponden a un banco registrado.
 - Cada cuenta no debe tener letras ni caracteres especiales.
 ## Definan las funcionalidades principales.
 - Crear cuenta como cliente y validarla.
