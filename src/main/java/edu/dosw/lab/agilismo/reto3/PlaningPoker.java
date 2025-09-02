@@ -45,7 +45,6 @@ public class PlaningPoker {
             respuestaFinal = listaDePuntajes.get(0);
         }
         this.respuestas.put(tarea, respuestaFinal);
-
     }
 
     private ArrayList<Integer> votacion(int numeroDeIntegrantes){

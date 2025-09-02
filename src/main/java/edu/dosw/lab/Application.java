@@ -9,7 +9,8 @@ public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-
+		PlaningPoker p = new PlaningPoker(3,2);
+		p.iniciar();
 	}
 
 }
