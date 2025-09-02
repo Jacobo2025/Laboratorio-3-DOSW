@@ -1,42 +1,14 @@
 package edu.dosw.lab.testing.reto4;
 
-import edu.dosw.lab.agilismo.reto4.Banco;
-import edu.dosw.lab.agilismo.reto4.Cliente;
-import edu.dosw.lab.agilismo.reto4.CuentaBancaria;
-import edu.dosw.lab.agilismo.reto4.GestorCuenta;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-public class GestorCuentaTest {
-
-    @Test
-    void testCrearCuentaYDepositar() {
-        Banco banco = new Banco("02", "DAVIVIENDA");
-        Cliente cliente = new Cliente("011", "Pedro Sanchez", "1122334455");
-        GestorCuenta gestor = new GestorCuenta();
-
-        CuentaBancaria cuenta = gestor.crearCuenta(cliente, banco, "0200001234");
-
-        assertTrue(gestor.validarCuenta(cuenta));
-
-        gestor.realizarDeposito(cuenta, 10000);
-        assertEquals(10000, gestor.consultarSaldo(cuenta));
-    }
-}
-package edu.dosw.lab.testing.reto4;
-
 import edu.dosw.lab.agilismo.reto4.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 import java.util.Optional;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Pruebas unitarias para la clase GestorCuenta
- */
-class GestorCuentaTest {
+public class GestorCuentaTest {
 
     private GestorCuenta gestor;
     private Banco banco;
@@ -47,6 +19,20 @@ class GestorCuentaTest {
         gestor = new GestorCuenta();
         banco = new Banco("01", "BANCOLOMBIA");
         cliente = new Cliente("C001", "Juan Perez", "123456789");
+    }
+
+    @Test
+    void testCrearCuentaYDepositar() {
+        Banco banco = new Banco("02", "DAVIVIENDA");
+        Cliente cliente = new Cliente("011", "Pedro Sanchez", "1122334455");
+        GestorCuenta gestorLocal = new GestorCuenta();
+
+        CuentaBancaria cuenta = gestorLocal.crearCuenta(cliente, banco, "0200001234");
+
+        assertTrue(gestorLocal.validarCuenta(cuenta));
+
+        gestorLocal.realizarDeposito(cuenta, 10000);
+        assertEquals(10000, gestorLocal.consultarSaldo(cuenta));
     }
 
     @Test
