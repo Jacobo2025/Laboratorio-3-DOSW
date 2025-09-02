@@ -84,4 +84,17 @@ public class GestorCuentaTest {
         List<CuentaBancaria> cuentas = gestor.cuentasDeCliente(cliente);
         assertEquals(2, cuentas.size());
     }
+
+    @Test
+    void testValidarCuentaConNull() {
+        assertFalse(gestor.validarCuenta(null));
+    }
+
+    @Test
+    void testValidarCuentaInvalida() {
+        Cliente cliente = new Cliente("C002", "Maria Lopez", "987654321");
+        Banco banco = new Banco("03", "BBVA");
+        CuentaBancaria cuentaInvalida = new CuentaBancaria("123", banco, cliente);
+        assertFalse(gestor.validarCuenta(cuentaInvalida));
+    }
 }

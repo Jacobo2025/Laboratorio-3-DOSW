@@ -89,8 +89,24 @@ Ejemplo: un test puede ejecutar una función sin validar correctamente el result
 Puede faltar probar casos límite, errores de concurrencia, problemas de integración, etc.
 
 ### Describa que es un Diagrama de Casos de Uso y que elementos lo componen. ¿Para qué sirve en la fase de análisis de requerimientos?
-
+Es un diagrama que permite identificar los actores externos que interactuan con nuestro proyecto a través de funcionalidades.
+Simplifica la forma en que todos los participes del desarrollo, incluyendo el cliente, perciben como el sistema funcionará y ofrecerá una visión general común del mismo.
 ### ¿Cuál es la diferencia entre el uso de Junit y Jacoco en un proyecto, y como complementa SonarQube este proceso en términos de calidad de software?
+Junit se usa para ver que los métodos y las clases esten bien implementados, mientras que 
+JaCoCo mide el procentaje de código que fueron cubiertas por las pruebas. SonarQube es una mezcla de Jacoco y de Junit, permíte detectar malos olores (duplicidad, bugs, etc).
 ### ¿Qué ventajas tiene el uso de Planning Poker frente a otros métodos de estimación tradicional y como ayuda a mejorar la transparencia y compromiso del equipo?
+- Involucra a todos los integrantes del equipo
+- Cada miembro vota de forma simultania, evitando posibles presiones o influencias.
+- Promuve discusiones valiosas
+- Genera consenso 
+- Mayor trasparencia
 ### Menciona los valores de Scrum y explica cual consideras más difícil de aplicar en un equipo. 
+- Apertura
+- Compromiso
+- Coraje
+- Foco
+- Respeto
 
+Reflexión: Apertura es el valor más difícl de aplicar en un equipo,
+ya que colaborar en nuevas ideas y aprendizajes es algo que a un equipo le cuesta
+aceptar.

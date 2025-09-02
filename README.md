@@ -3,8 +3,7 @@
 
 
 # Reto 1
-## Ident
-ifiquen reglas de negocio.
+## Identifiquen reglas de negocio.
 - Los números de cuenta deben tener exactamente 10 dígitos.
 - Solo es válido si los dos primeros dígitos corresponden a un banco registrado.
 - Cada cuenta no debe tener letras ni caracteres especiales.
@@ -90,3 +89,20 @@ Luego se le pedirá a cada integrante que vote por la tarea. El código revisa q
 
 # RETO 4
 # RETO 5
+### pom.xml compilado:
+![imagen6.png](docs/imagenes/imagen6.png)
+![imagen7.png](docs/imagenes/imagen7.png)
+### index.html:
+![imagen8.png](docs/imagenes/imagen8.png)
+- Cobertura de Instrucciones: 87%
+- Cobertura de Ramas: 84%
+### Reflexión:
+Para mejorar nuestra cobertura tuvimos que crear dos nuevas pruebas en la clase GestorCuentaTest.
+![imagen9.png](docs/imagenes/imagen9.png)
+Estas nuevas pruebas ayudaron a subir el nivel de cobertura de nuestro proyecto.
+![imagen10.png](docs/imagenes/imagen10.png)
+JaCoCo nos permitió saber cuales escenarios no estaban cubiertos y eso nos ayudó a identificar qué pruebas nos hacian falta
+para lograr que nuestro proyecto alcanzara las rúbricas mínimas que se nos pedían. Pasamos de un 84% en la cobertura de la rama
+a un 87%.
+# RETO 6
+
