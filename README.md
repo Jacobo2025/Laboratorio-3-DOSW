@@ -1,7 +1,18 @@
 # Laboratorio-3-DOSW
-
-
-
+# PUNTO 1
+- Versión de Java:
+![javaVersion.png](docs%2Fimagenes%2FjavaVersion.png)
+- Versión de Maven:
+![mavenVersion.png](docs%2Fimagenes%2FmavenVersion.png)
+- Codígo del pom.xml modificado:
+![pomModificado.png](docs%2Fimagenes%2FpomModificado.png)
+- Test:
+![test.png](docs%2Fimagenes%2Ftest.png)
+- Directorios creados:
+![directorio.png](docs%2Fimagenes%2Fdirectorio.png)
+- Proyecto compilado en el que añadieron las dependencias y pluglins necesarios en el archivo pom.xml:
+![jacocoCompilado.png](docs%2Fimagenes%2FjacocoCompilado.png)
+# PUNTO 2
 # Reto 1
 ## Identifiquen reglas de negocio.
 - Los números de cuenta deben tener exactamente 10 dígitos.
