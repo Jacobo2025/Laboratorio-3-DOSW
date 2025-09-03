@@ -144,7 +144,18 @@ Estas nuevas pruebas ayudaron a subir el nivel de cobertura de nuestro proyecto.
 JaCoCo nos permitió saber cuales escenarios no estaban cubiertos y eso nos ayudó a identificar qué pruebas nos hacian falta
 para lograr que nuestro proyecto alcanzara las rúbricas mínimas que se nos pedían. Pasamos de un 84% en la cobertura de la rama
 a un 87%.
-# RETO 6
+# Reto 6 – Análisis Estático con SonarLint
 
+Se utilizó el plugin **SonarLint (SonarQube for IDE)** en IntelliJ IDEA para realizar el análisis estático del código del proyecto Bankify.
 
+###  Evidencia
+![sonarQubeReto6](docs/imagenes/sonarQubereto6.png)
 
+El análisis detectó:
+- 17 issues en 4 archivos.
+- Problemas de nombres de variables que ocultaban atributos.
+- Uso innecesario del modificador `public` en pruebas.
+- Recomendación de usar `assertEquals` en lugar de otras aserciones.
+
+### 🔹 Reflexiones de los Integrantes
+- Juan Silva: El análisis estático ayuda a identificar problemas antes de ejecutar el programa, reduciendo riesgos y errores en producción.
