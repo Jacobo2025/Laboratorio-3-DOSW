@@ -88,6 +88,46 @@ Luego se le pedirá a cada integrante que vote por la tarea. El código revisa q
 - DRY: La validación de votos está centralizada en isVotoCorrecto, evitando duplicar lógica.
 
 # RETO 4
+
+## Codigo fuente de las clases e implementacion
+- srs/main/java/edu.dosw.lab/agilismo/reto4
+- Banco.java
+- Cliente.java
+- CuentaBancaria.java
+- GestorCuenta.java
+## Codigo fuente de las clases de prueba
+- srs/test/java/edu.dosw.lab/agilismo/reto4
+- BancoTest.java
+- ClienteTest.java
+- CuentaBancariaTest.java
+- GestorCuentaTest.java
+
+## Evidencia de pruebas 
+
+![prueba](docs/imagenes/pruebasDeReto4.png)
+
+## Explicacion y que principios de patrones fueros usados
+
+- TDD (Test-Driven Development):
+Se implementaron primero las pruebas (Rojo), luego las clases hasta que pasaron (Verde) y finalmente se refactorizó el código.
+
+- Principio de Responsabilidad Única (SRP – SOLID):
+Banco solo gestiona información de banco.
+Cliente solo modela un cliente.
+CuentaBancaria encapsula lógica de validación y depósitos.
+GestorCuenta coordina operaciones de cuentas (creación, búsqueda, depósitos, consultas).
+
+- Patrón Facade (simplificación de operaciones):
+GestorCuenta actúa como una fachada para centralizar operaciones sobre cuentas, ocultando la complejidad de validaciones.
+
+- Uso de Streams y Lambdas:
+Para buscar cuentas, calcular saldos totales y filtrar información de clientes (filter, mapToInt, collect).
+
+- Principio Fail Fast:
+El código lanza excepciones (IllegalArgumentException) cuando se detectan datos inválidos (ej. depósitos negativos, cuentas duplicadas).
+
+- Encapsulamiento y Abstracción:
+Atributos privados con getters, validaciones en constructores y métodos, garantizando integridad de datos.
 # RETO 5
 ### pom.xml compilado:
 ![imagen6.png](docs/imagenes/imagen6.png)
@@ -105,4 +145,6 @@ JaCoCo nos permitió saber cuales escenarios no estaban cubiertos y eso nos ayud
 para lograr que nuestro proyecto alcanzara las rúbricas mínimas que se nos pedían. Pasamos de un 84% en la cobertura de la rama
 a un 87%.
 # RETO 6
+
+
 
