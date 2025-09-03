@@ -157,5 +157,5 @@ El análisis detectó:
 - Uso innecesario del modificador `public` en pruebas.
 - Recomendación de usar `assertEquals` en lugar de otras aserciones.
 
-### 🔹 Reflexiones de los Integrantes
+###  Reflexiones de los Integrantes
 - Juan Silva: El análisis estático ayuda a identificar problemas antes de ejecutar el programa, reduciendo riesgos y errores en producción.
