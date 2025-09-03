@@ -46,6 +46,7 @@
 
 # RETO 2
 ## Realicen un diagrama de contexto de la solución (relaciones entre el sistema y los actores identificados) y explíquenlo.
+![imagen11.png](docs%2Fimagenes%2Fimagen11.png)
 
 ## Realicen un diagrama de Casos de uso en base a sus actores y las funcionalidades identificadas.
 ![diagramaDeCasosDeUso.png](docs/uml/diagramaDeCasosDeUso.png)
@@ -144,7 +145,7 @@ Estas nuevas pruebas ayudaron a subir el nivel de cobertura de nuestro proyecto.
 JaCoCo nos permitió saber cuales escenarios no estaban cubiertos y eso nos ayudó a identificar qué pruebas nos hacian falta
 para lograr que nuestro proyecto alcanzara las rúbricas mínimas que se nos pedían. Pasamos de un 84% en la cobertura de la rama
 a un 87%.
-# Reto 6 – Análisis Estático con SonarLint
+# RETO 6 – Análisis Estático con SonarLint
 
 Se utilizó el plugin **SonarLint (SonarQube for IDE)** en IntelliJ IDEA para realizar el análisis estático del código del proyecto Bankify.
 
@@ -159,3 +160,4 @@ El análisis detectó:
 
 ###  Reflexiones de los Integrantes
 - Juan Silva: El análisis estático ayuda a identificar problemas antes de ejecutar el programa, reduciendo riesgos y errores en producción.
+- Jacobo Diaz: El uso de esta herramienta de análisis estático es fundamental para mantener la calidad del código desde las primeras etapas del desarrollo. Permite detectar problemas comunes y malas prácticas.
